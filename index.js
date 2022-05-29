@@ -1,9 +1,7 @@
 const { getMaxListeners } = require('process');
-function send(){
-  require(['nodemailer', function(nodemailer){
-
-  }]);
-  
+define(function send(){
+ 
+    
 
 
     var nodemailer = require('nodemailer');
@@ -37,4 +35,4 @@ function send(){
           console.log('Email sent: ' + info.response);
         }
       });
-}
+})
