@@ -1,5 +1,8 @@
 const { getMaxListeners } = require('process');
 function send(){
+  require(['nodemailer', function(nodemailer){
+
+  }]);
   
 
 
