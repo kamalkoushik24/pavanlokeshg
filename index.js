@@ -2,7 +2,7 @@ function sendEmail(){
   
   message = "Your Query has been Submitted and will be reviewed.";
   Email.send({
-    Host : "smtp.gmail.com",
+    Host : "smtp.elasticemail.com",
     Username : "pavanlokeshnoreplygmail.com",
     Password : "pavan@123",
     To : 'pavanlokeshnaiduguruju@gmail.com',
