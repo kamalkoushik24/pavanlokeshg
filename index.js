@@ -1,5 +1,5 @@
 function sendEmail(){
-  document = index.html;
+  
   message = "Your Query has been Submitted and will be reviewed.";
   Email.send({
     Host : "smtp.gmail.com",
