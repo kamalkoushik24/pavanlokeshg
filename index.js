@@ -3,8 +3,8 @@ function sendEmail(){
 
   var body = tinymce.activeEditor.getContent({format:'text'});
   var content = "Name: "  + document.getElementById('Name').value  + '<br>'+
-  "From: " + document.getElementById('Email').value + '\n\n\n' +
-  "Project Idea (or) Query: \n"+ body;
+  "From: " + document.getElementById('Email').value + '<br><br><br>' +
+  "Project Idea (or) Query: <br>"+ body;
   
   message = "Your Query has been Submitted and will be reviewed.";
   Email.send({
@@ -18,9 +18,9 @@ function sendEmail(){
   
   message => alert(message)
   
+  
 );
 return false,
 console.log(content);
-document.getElementById("contact-form").reset();
 
 }

@@ -284,7 +284,7 @@
                 </div>
                 <div class="column right" id="box">
                     <div class="text">Message me</div>
-                    <form action="#" onsubmit=" return sendEmail();return false;reset()" id= "contact-form">
+                    <form action="#" onsubmit=" return sendEmail();return false; this.reset(); location.reload();_" id= "contact-form">
                         <div class="fields">
                             
                             <div class="field name">
@@ -304,7 +304,7 @@
                             </div>
 
                             <div class="button">
-                                <button type="button" onclick="return sendEmail(); return false; reset()">Send Message</button>
+                                <button type="button" onclick="return sendEmail(); return false; location.reload()")>Send Message</button>
                             </div>
 
                         </div>
