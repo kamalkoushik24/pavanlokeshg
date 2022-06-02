@@ -491,7 +491,7 @@ background: rgb(255, 255, 255);
 transform: translateX(-50%);
 }
 .hobbies .title::after{
-content: "I'm Intrests";
+content: "My Interests";
 color: crimson;
 font-size: 20px;
 position: absolute;
