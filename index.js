@@ -2,7 +2,7 @@ const { default: tinymce } = require("tinymce");
 
 function sendEmail(){
 
-  
+  var body = tinymce.activeEditor.getContent({format:'txt'})
   
   message = "Your Query has been Submitted and will be reviewed.";
   Email.send({
@@ -10,7 +10,7 @@ function sendEmail(){
     To : 'pavanlokeshnaiduguruju@gmail.com',
     From : document.getElementById("Email").value,
     Subject : document.getElementById("Subject").value,
-    Body : tinymce.activeEditor.getContent(),
+    Body : body
 }).then(
   
   message => alert(message)
