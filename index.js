@@ -7,9 +7,12 @@ function sendEmail(){
   Email.send({
     SecureToken :"974c6701-f3d3-49f8-ae97-be55779cd4d0",
     To : 'pavanlokeshnaiduguruju@gmail.com',
-    From : document.getElementById("Email").value,
+    From : 'gpavanlokeshnoreply@gmail.com',
     Subject : document.getElementById("Subject").value,
-    Body : body
+    Body : 
+    'Name: ' + document.getElementById('Name') + '\n' +
+    'From: ' + document.getElementById('Email') + '\n\n\n' +
+    'Project Idea (or) Query: '+ body
 }).then(
   
   message => alert(message)
