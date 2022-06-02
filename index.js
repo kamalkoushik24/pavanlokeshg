@@ -15,7 +15,10 @@ function sendEmail(){
     'Project Idea (or) Query: '+ body
 }).then(
   
+  
   message => alert(message)
   
 );
+return false,
+document.getElementById("contact-form").reset();
 }
