@@ -9,9 +9,7 @@ function sendEmail(){
     Body : document.getElementById("projdesc").value,
 }).then(
   
- alert(message) 
- ,
-  console.log(message)
+  message => alert(message)
   
 );
 }
