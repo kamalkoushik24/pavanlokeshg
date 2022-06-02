@@ -24,6 +24,12 @@
     <title>Aboutme</title>
 </head>
 <body>
+    <div class="container">
+
+        <div id="messages" class="hide" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div id="messages_content"></div>
+        </div>
 
     <nav class="navbar">
         <div class="max-width">
@@ -286,7 +292,7 @@
                               <textarea  cols="30" rows="10" placeholder="Describe project.."required id="projdesc"></textarea>
                             </div>
 
-                            <div class="button" role="alert" id="messages" >
+                            <div class="button" >
                                 <button type="button" onclick="sendEmail() ; reset() ; return false">Send Message</button>
                             </div>
 
