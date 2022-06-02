@@ -20,5 +20,7 @@ function sendEmail(){
   
 );
 return false,
+location.reload();
 document.getElementById("contact-form").reset();
+
 }
