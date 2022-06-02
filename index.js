@@ -5,7 +5,7 @@ function sendEmail(){
   
   message = "Your Query has been Submitted and will be reviewed.";
   Email.send({
-    SecureToken :"3d955485-a74d-4f2f-b386-748dee39f4ca",
+    SecureToken :"974c6701-f3d3-49f8-ae97-be55779cd4d0",
     To : 'pavanlokeshnaiduguruju@gmail.com',
     From : document.getElementById("Email").value,
     Subject : document.getElementById("Subject").value,
