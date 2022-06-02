@@ -9,7 +9,10 @@ function sendEmail(){
     Body : document.getElementById("projdesc").value,
 }).then(
   
-  message => alert(message)
+  
+  message => alert(message),
+  console.log(message)
+  
 );
 }
 $('#contact-form').submit(function(e) {
