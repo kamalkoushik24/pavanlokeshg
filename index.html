@@ -24,6 +24,7 @@
     <title>Aboutme</title>
 </head>
 <body>
+
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#"> About<span>Me</span> </a></div>
@@ -266,7 +267,7 @@
                 </div>
                 <div class="column right" id="box">
                     <div class="text">Message me</div>
-                    <form action="#" onsubmit="return sendEmail() ; return false; reset();",id= "contact-form">
+                    <form action="#" onsubmit="return sendEmail() ; return false; reset()" id= "contact-form">
                         <div class="fields">
                             
                             <div class="field name">
@@ -285,8 +286,8 @@
                               <textarea  cols="30" rows="10" placeholder="Describe project.."required id="projdesc"></textarea>
                             </div>
 
-                            <div class="button" >
-                                <button type="button" onclick="sendEmail() ; reset() ; return false">Send Message</button>
+                            <div class="button">
+                                <button type="button" onclick="return sendEmail(); return false; reset()">Send Message</button>
                             </div>
 
                         </div>
