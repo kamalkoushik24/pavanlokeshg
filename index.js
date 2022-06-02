@@ -9,13 +9,8 @@ function sendEmail(){
     Body : document.getElementById("projdesc").value,
 }).then(
   
-  
-  $('#contact-form').submit(function(e) {
-    $('#').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
-    $('#messages_content').html(message);
-    $('#modal').modal('show');
-    e.preventDefault();
-  }),
+ alert(message) 
+ ,
   console.log(message)
   
 );
