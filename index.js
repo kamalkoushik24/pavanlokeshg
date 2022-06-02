@@ -20,7 +20,7 @@ function sendEmail(){
   
   
 );
-return false,
+location.reload();s
 console.log(content);
 
 }
