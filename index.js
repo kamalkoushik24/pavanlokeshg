@@ -1,4 +1,3 @@
-const { default: tinymce } = require("tinymce");
 
 function sendEmail(){
 
