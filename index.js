@@ -10,9 +10,9 @@ function sendEmail(){
     From : 'gpavanlokeshnoreply@gmail.com',
     Subject : document.getElementById("Subject").value,
     Body : 
-    'Name: ' + document.getElementById('Name') + '\n' +
-    'From: ' + document.getElementById('Email') + '\n\n\n' +
-    'Project Idea (or) Query: '+ body
+    'Name: ' + document.getElementById('Name').value + '\n\n' +
+    'From: ' + document.getElementById('Email').value + '\n\n\n' +
+    'Project Idea (or) Query: \n'+ body
 }).then(
   
   
