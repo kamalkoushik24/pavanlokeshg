@@ -1,10 +1,10 @@
 
 function sendEmail(){
 
-  var body = tinymce.activeEditor.getContent({format:'txt'});
-  var content = "Name: "  + document.getElementById('Name').value  + '\n\n\n'+
-  "From: " + document.getElementById('Email').value + '\r\r\r' +
-  "Project Idea (or) Query: \r"+ body;
+  var body = tinymce.activeEditor.getContent({format:'text'});
+  var content = "Name: "  + document.getElementById('Name').value  + '<br>'+
+  "From: " + document.getElementById('Email').value + '\n\n\n' +
+  "Project Idea (or) Query: \n"+ body;
   
   message = "Your Query has been Submitted and will be reviewed.";
   Email.send({
