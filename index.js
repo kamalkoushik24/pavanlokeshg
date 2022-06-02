@@ -6,7 +6,7 @@ function sendEmail(){
     To : 'pavanlokeshnaiduguruju@gmail.com',
     From : document.getElementById("Email").value,
     Subject : document.getElementById("Subject").value,
-    Body : document.getElementById("projdesc").getContent().value,
+    Body : tinymce.editors['projdesc'].getContent(),
 }).then(
   
   message => alert(message)
