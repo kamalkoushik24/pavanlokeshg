@@ -12,7 +12,7 @@ function sendEmail(){
   
   $('#contact-form').submit(function(e) {
     $('#').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
-    $('#messages_content').html('<h4>Your Query has been submitted successfully</h4>');
+    $('#messages_content').html(message);
     $('#modal').modal('show');
     e.preventDefault();
   }),
