@@ -1,3 +1,5 @@
+const { default: tinymce } = require("tinymce");
+
 function sendEmail(){
   
   message = "Your Query has been Submitted and will be reviewed.";
@@ -6,7 +8,7 @@ function sendEmail(){
     To : 'pavanlokeshnaiduguruju@gmail.com',
     From : document.getElementById("Email").value,
     Subject : document.getElementById("Subject").value,
-    Body : tinymce.editors['projdesc'].getContent(),
+    Body : tinymce.activeEditor.getContent(),
 }).then(
   
   message => alert(message)
