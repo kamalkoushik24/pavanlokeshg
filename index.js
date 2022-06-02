@@ -10,14 +10,13 @@ function sendEmail(){
 }).then(
   
   
-  message => alert(message),
+  $('#contact-form').submit(function(e) {
+    $('#').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
+    $('#messages_content').html('<h4>Your Query has been submitted successfully</h4>');
+    $('#modal').modal('show');
+    e.preventDefault();
+  }),
   console.log(message)
   
 );
 }
-$('#contact-form').submit(function(e) {
-  $('#').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
-  $('#messages_content').html('<h4>Your Query has been submitted successfully</h4>');
-  $('#modal').modal('show');
-  e.preventDefault();
-});
