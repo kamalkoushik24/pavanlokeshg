@@ -1,2 +1,4 @@
-SMTP- 1B30A123601AABB6B3542ABCD7F28F814ACF
+SMTP server: smtp.elasticemail.com
+SMTP username: gpavanlokeshnoreply@gmail.com
+SMTP password- 1B30A123601AABB6B3542ABCD7F28F814ACF
 SecureToken: 974c6701-f3d3-49f8-ae97-be55779cd4d0
